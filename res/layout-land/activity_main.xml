@@ -1,7 +1,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/portraitRL"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     android:gravity="top"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -15,42 +17,50 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:text="@string/titulo" />
+        android:text="@string/titulo"
+        android:textColor="@color/whitesmoke"
+        android:textSize="40sp" />
 
     <Button
         android:id="@+id/jugar"
+        style="@color/gray"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        
         android:layout_alignLeft="@+id/salir"
+        android:layout_alignRight="@+id/salir"
         android:layout_below="@+id/titulo"
-        android:layout_toLeftOf="@+id/configurar"
-        
-        android:text="@string/jugar" />
+        android:text="@string/jugar"
+        android:textColor="@color/white" />
 
     <Button
         android:id="@+id/configurar"
+        style="@color/gray"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/titulo"
         android:layout_below="@+id/titulo"
-        android:text="@string/configurar" />
+        android:layout_toRightOf="@+id/salir"
+        android:text="@string/configurar"
+        android:textColor="@color/white" />
     
     <Button
         android:id="@+id/about"
+        style="@color/gray"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/configurar"
-        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/configurar"
         android:layout_below="@+id/jugar"
-        android:text="@string/about" />
+        android:text="@string/about"
+        android:textColor="@color/white" />
     
     <Button
         android:id="@+id/salir"
+        style="@color/gray"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/configurar"
-        android:layout_toLeftOf="@+id/configurar"
-        android:text="@string/salir" />
+        android:layout_toLeftOf="@+id/titulo"
+        android:text="@string/salir"
+        android:textColor="@color/white" />
 
 </RelativeLayout>
